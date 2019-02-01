@@ -23,14 +23,35 @@
     <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
         <Button
             android:id="@+id/btnLapReset"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="@string/btnLap"/>
+            android:background="@drawable/rounded_rect_lap"
+            android:text="@string/btnLap"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorWhite"/>
 
+        <Button
+            android:id="@+id/btnStartPause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_rect_stop"
+            android:text="@string/lblStart"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorWhite"/>
+
+        <ListView
+            android:id="@+id/lvLaps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnStartPause"></ListView>
     </RelativeLayout>
 
 

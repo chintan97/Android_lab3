@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
             // convert value to display
             minutes = seconds / 60;
-            seconds = minutes % 60;
+            seconds = seconds % 60;
             String updatedTime = minutes + ":"
                     + String.format("%02d", seconds) + ":"
                     + String.format("%03d", milliseconds);
